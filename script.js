@@ -3,7 +3,7 @@
   فرمت: کد کشور بدون + و بدون فاصله
   مثال ایران: 989121234567
 */
-const WHATSAPP_NUMBER = "989000000000";
+const WHATSAPP_NUMBER = "9925457503";
 
 const products = [
   {
