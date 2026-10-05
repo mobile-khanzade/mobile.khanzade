@@ -50,7 +50,83 @@
     max-width:100%;
   border-radius:50%;
     display:block;
+/* اصلاح چیدمان اصلی سایت */
+body{
+  margin:0;
+  background:#fff;
+  color:#111;
 }
+
+.wrap{
+  max-width:1400px;
+  margin:auto;
+  padding:0 32px;
+}
+
+.hero{
+  min-height:560px;
+  padding:70px 60px;
+  display:grid;
+  grid-template-columns:1fr 1.15fr;
+  align-items:center;
+  gap:70px;
+  direction:ltr;
+}
+
+.hero .visual{
+  order:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.hero .hero-copy{
+  order:2;
+  direction:rtl;
+  text-align:right;
+}
+
+.hero-logo{
+  width:420px;
+  height:420px;
+  object-fit:contain;
+  border-radius:50%;
+  display:block;
+}
+
+.hero h1{
+  font-size:58px;
+  line-height:1.45;
+  margin:0 0 18px;
+  color:#111;
+}
+
+.hero p{
+  font-size:18px;
+  line-height:2;
+  color:#555;
+}
+
+.links{
+  display:flex;
+  justify-content:center;
+  gap:24px;
+}
+
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .hero .hero-copy{
+    text-align:center;
+  }
+
+  .hero-logo{
+    width:360px;
+    height:360px;
+  }
 }</style>
 </head>
 <body>
